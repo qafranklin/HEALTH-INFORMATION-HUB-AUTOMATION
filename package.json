@@ -1,0 +1,28 @@
+{
+  "name": "health-information-hub-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:test": "cross-env ENVIRONMENT=test npx playwright test --grep @Smoke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qafranklin/HEALTH-INFORMATION-HUB-AUTOMATION.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qafranklin/HEALTH-INFORMATION-HUB-AUTOMATION/issues"
+  },
+  "homepage": "https://github.com/qafranklin/HEALTH-INFORMATION-HUB-AUTOMATION#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "dotenv": "^17.2.1"
+  }
+}
