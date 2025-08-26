@@ -15,7 +15,7 @@ test("@Smoke TC490440 - User can log in, create a patient profile with random na
   // 🟩 LOGIN
   await test.step("Login User Account", async () => {
     await loginPage.login();
-    await page.waitForTimeout(5000);
+    await page.waitForLoadState('networkidle');
  // better than fixed timeout
   });
 

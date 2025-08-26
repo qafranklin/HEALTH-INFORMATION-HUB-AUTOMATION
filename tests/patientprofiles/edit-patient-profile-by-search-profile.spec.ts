@@ -17,7 +17,7 @@ test('TC491786 - User can Search patient using search profile', async ({ page })
   // 🟩 LOGIN
   await test.step("Login User Account", async () => {
     await loginPage.login();
-    await page.waitForTimeout(10000); // Consider replacing with proper wait
+    await page.waitForLoadState('networkidle'); // Consider replacing with proper wait
   });
 
   // 🟩 NAVIGATE TO PATIENT PROFILES
